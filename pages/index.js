@@ -3,7 +3,9 @@ import styles from '../styles/Home.module.css'
 import {useRouter} from 'next/router'
 
 // Estructura
-import NavBar from './components/navbar/index.js'
+import NavBar from '../components/navbar/index'
+import Button from '../components/boton/index'
+import calendario from '../components/calendario/index'
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
             <div className = {styles.centerMainPage}>
               <h3>Contadora Publica</h3>
               <p>Asesoría nivel contable, tributario, laboral y financiero</p>
+              <Button url = {'/api/hello'} nombre = {'Contactame'}/>
             </div>
           </div>
         

@@ -1,4 +1,6 @@
+import css from 'styled-jsx/css'
 
+export default css`
 
 .mainNavContainer{
     position: fixed;
@@ -49,3 +51,5 @@
     color: sandybrown;
     /* color: #F2811D; */
 }
+
+`
