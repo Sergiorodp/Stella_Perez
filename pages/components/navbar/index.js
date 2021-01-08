@@ -1,6 +1,6 @@
-import navStyle from '../../styles/NavStyle/Nav.module.css'
+import navStyle from '../../../styles/NavStyle/Nav.module.css'
 
-import Link from 'next/Link'
+import Link from 'next/link'
 
 export default function NavBar(){
     return(
