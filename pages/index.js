@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import {useRouter} from 'next/router'
 
 // Estructura
-import NavBar from '../Components/navbar/index'
+import NavBar from '../components/navbar/index'
 
 export default function Home() {
   return (
