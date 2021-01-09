@@ -5,7 +5,7 @@ export default css`
 
 .mainNavContainer{
     position: fixed;
-    width: 100vw;
+    width: 101vw;
     background: ${colors.primary};
     display: grid;
     height: 4rem;
@@ -31,6 +31,9 @@ export default css`
     justify-content: center;
 }
 
+.body-active{
+  overflow: hidden;
+}
 .opciones{
     grid-column: 3/6;
     display: flex;
@@ -67,27 +70,26 @@ export default css`
 
     .navItemsContainer{
         width:80vw;
+        /* background:red; */
         grid-template-columns: repeat(2,1fr)
-    }
-    .opciones{
-        display:none;
     }
     
     .lines-nav-container{
         display: flex;
         grid-column: 2/3;
-        /* background: black; */
         align-items: center;
+        /* background:black; */
     }
 
     .lines-block{
-        margin-left:auto;
+        margin:0 0 0 auto;
     }
 
     .line-div{
         width: 25px;
         height: 2px;
         background-color: ${colors.white};
+        margin-top: 4px;
         margin-bottom: 4px;
         border-radius:9999px;
         transition: 0.2s ease-in-out;
@@ -99,6 +101,42 @@ export default css`
 
     .moverRight{
         width: 28px;
+    }
+
+
+    .opciones{
+        height: 100vh;
+        width: 105vw;
+        margin: 46px 0 0 0;
+        position:fixed;
+        background-color: rgba(0 ,0 ,0 ,0);
+        overflow: scroll;
+        transform: translateX(100%);
+        transition: transform .6s ease-in-out;
+    }
+
+    .listItems{
+        background:${colors.primary};
+        margin: 0 0 0 7em;
+        width: 100vw;
+        transform: translateX(100%);
+        transition: transform .6s ease-in-out;
+    }
+
+    .listItems-open{
+        transform: translateX(0%);
+    }
+
+    .body-active{
+        overflow-y: hidden;
+    }
+    .opciones-open{
+        background-color: rgba(0 ,0 ,0 ,0);
+        transform: translateX(-10%);
+    }
+
+    .listItems{
+        flex-direction: column;
     }
 
 }

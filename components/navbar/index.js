@@ -5,8 +5,10 @@ import { createRef } from 'react'
 
 const lineUp = createRef()
 const LineDown = createRef()
+const itemsContainer = createRef()
+const listItems = createRef()
 
-export default function NavBar(){
+export default function NavBar({bodyRef}){
     
     var visible = false
 
@@ -14,12 +16,18 @@ export default function NavBar(){
         visible = !visible
         if(visible){
             console.log('abierto')
+            document.body.classList.add("body-active")
             lineUp.current.classList.add("moverLeft")
             LineDown.current.classList.add("moverRight")
+            itemsContainer.current.classList.add("opciones-open")
+            listItems.current.classList.add("listItems-open")
         }else{
             console.log('cerrado')
+            document.body.classList.remove("body-active")
             lineUp.current.classList.remove("moverLeft")
             LineDown.current.classList.remove("moverRight")
+            itemsContainer.current.classList.remove("opciones-open")
+            listItems.current.classList.remove("listItems-open")
         }
     }
 
@@ -29,14 +37,15 @@ export default function NavBar(){
             <div className= "navItemsContainer">
                 <h2>Stella Perez</h2>
                 
-                <div className = "opciones">
-                    <ul className = "listItems">
+                <div className = "opciones" ref = {itemsContainer} onClick = {show}>
+                    <ul className = "listItems" ref = {listItems}>
                         <li> <Link href='/'> Inicio </Link></li>    
                         <li><Link href='/api/hello'>Sobre mí</Link></li>
                         <li><Link href='https://vercel.com/dashboard/integrations'>Servicios</Link></li>
                         <li><Link href='https://vercel.com/dashboard/integrations'>Contacto</Link></li>
                     </ul>
                 </div>
+
                 <div className = "lines-nav-container">
                     <div className = "lines-block" onClick = {show}>
                         <div className = "line-one line-div " ref = {lineUp} ></div>
