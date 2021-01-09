@@ -6,6 +6,8 @@ import {useRouter} from 'next/router'
 import NavBar from '../components/navbar/index'
 import Button from '../components/boton/index'
 import calendario from '../components/calendario/index'
+import Loader from '../components/loader/index'
+import SobreMi from '../secctions/sobreMi/index.'
 
 export default function Home() {
   return (
@@ -21,9 +23,10 @@ export default function Home() {
               <h3>Contadora Publica</h3>
               <p>Asesoría nivel contable, tributario, laboral y financiero</p>
               <Button url = {'/api/hello'} nombre = {'Contactame'}/>
+              {/* <Loader/> */}
             </div>
           </div>
-        
+          <SobreMi/>
       </main>
 
       <footer className={styles.footer}>
