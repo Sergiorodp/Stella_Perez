@@ -27,7 +27,6 @@ export default css`
     /* padding-top: 5%; */
     grid-column: 1/2;
     grid-row: 1/3;
-    text-aling : center;
     color: ${colors.primary};
 }
 

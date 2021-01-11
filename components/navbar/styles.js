@@ -10,7 +10,6 @@ export default css`
     display: grid;
     height: 4rem;
     place-content: center;
-    /* border-bottom: 1px solid seashell; */
 }
 
 .navItemsContainer{
@@ -70,8 +69,7 @@ export default css`
 
     .navItemsContainer{
         width:80vw;
-        /* background:red; */
-        grid-template-columns: repeat(2,1fr)
+        grid-template-columns: repeat(2,1fr);
     }
     
     .lines-nav-container{
@@ -130,6 +128,7 @@ export default css`
     .body-active{
         overflow-y: hidden;
     }
+
     .opciones-open{
         background-color: rgba(0 ,0 ,0 ,0);
         transform: translateX(-10%);

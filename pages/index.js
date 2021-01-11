@@ -20,7 +20,7 @@ export default function Home() {
         <title>Stella Perez | Contadora</title>
       </Head>
       <nav className = {styles.nav}>
-        <NavBar bodyRef = {mainContainer}/>
+        {/* <NavBar bodyRef = {mainContainer}/> */}
       </nav>
       <main className={styles.main}>
           
@@ -37,11 +37,11 @@ export default function Home() {
 
       </main>
 
-      {/* <footer className={styles.footer}>
+      <footer className={styles.footer}>
         <p>
           Powered by Maria Stella Perez Perez
         </p>
-      </footer> */}
+      </footer>
     </div>
   )
 }
