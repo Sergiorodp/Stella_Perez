@@ -16,14 +16,14 @@ export default function NavBar({bodyRef}){
         visible = !visible
         if(visible){
             console.log('abierto')
-            document.body.classList.add("body-active")
+            bodyRef.current.classList.add("body-active")
             lineUp.current.classList.add("moverLeft")
             LineDown.current.classList.add("moverRight")
             itemsContainer.current.classList.add("opciones-open")
             listItems.current.classList.add("listItems-open")
         }else{
             console.log('cerrado')
-            document.body.classList.remove("body-active")
+            bodyRef.current.classList.remove("body-active")
             lineUp.current.classList.remove("moverLeft")
             LineDown.current.classList.remove("moverRight")
             itemsContainer.current.classList.remove("opciones-open")
