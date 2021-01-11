@@ -1,8 +1,9 @@
 .container {
   min-height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;   
-  max-width: 1600px;
+  /* max-width: 1600px; */
   /* background: red; */
   display: flex;
   align-items: center;

@@ -56,10 +56,6 @@ export default css`
     .section-container{
         grid-template-columns: 1fr;
     }
-
-    .info-container{
-        text-aling: center;
-    }
 }
 
 `
