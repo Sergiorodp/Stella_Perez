@@ -28,7 +28,7 @@ export default css`
     grid-column: 1/2;
     grid-row: 1/3;
     text-aling : center;
-    color: ${colors.primary}
+    color: ${colors.primary};
 }
 
 .info-container h3{
