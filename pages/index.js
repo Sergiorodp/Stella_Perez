@@ -37,11 +37,11 @@ export default function Home() {
 
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <p>
           Powered by Maria Stella Perez Perez
         </p>
-      </footer>
+      </footer> */}
     </div>
   )
 }

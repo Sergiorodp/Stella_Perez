@@ -63,8 +63,8 @@
 
 .footer {
   width: 100%;
-  height: 100px;
-  /* background: sandybrown; */
+  height: 800px;
+  background: sandybrown;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
